@@ -1,4 +1,4 @@
-update=Fri 23 Oct 2020 02:52:38 PM PDT
+update=Fri 23 Oct 2020 10:14:17 PM PDT
 version=1
 last_client=kicad
 [general]
@@ -58,7 +58,7 @@ CopperTextThickness=0.3048
 CopperTextItalic=0
 CopperTextUpright=1
 EdgeCutLineWidth=0.03809999999999999
-CourtyardLineWidth=0.0508
+CourtyardLineWidth=0.05
 OthersLineWidth=0.1524
 OthersTextSizeV=1.016
 OthersTextSizeH=1.016
@@ -66,7 +66,7 @@ OthersTextSizeThickness=0.1524
 OthersTextItalic=0
 OthersTextUpright=1
 SolderMaskClearance=0
-SolderMaskMinWidth=0.1016
+SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
