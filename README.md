@@ -4,4 +4,6 @@ This is an open-source **Mixed Reality** headset that aims to augment the power 
 
 Version 0.1 of the mainboard is avaiable in `/hardware/mainboard`, it is designed around an RK3399-based SOM.
 
-[Preliminary BOM](https://docs.google.com/spreadsheets/d/1svv3ELyh4oFGVD46yAfUMj0UHieJaqO5vQMvadlOVdQ/edit?usp=sharing)
+[BOM](https://docs.google.com/spreadsheets/d/1svv3ELyh4oFGVD46yAfUMj0UHieJaqO5vQMvadlOVdQ/edit?usp=sharing)
+
+[Digi-Key Shared BOM (Requires account)](https://www.digikey.com/BOM/Create/CreateSharedBom?bomId=8410949)
