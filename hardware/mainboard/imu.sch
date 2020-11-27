@@ -1,0 +1,159 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5400 2850 5400 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5FD7C973
+P 5400 3950
+F 0 "#PWR?" H 5400 3700 50  0001 C CNN
+F 1 "GND" V 5405 3822 50  0000 R CNN
+F 2 "" H 5400 3950 50  0001 C CNN
+F 3 "" H 5400 3950 50  0001 C CNN
+	1    5400 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard:ICM-20602 U?
+U 1 1 5FD7C97E
+P 4700 3350
+F 0 "U?" H 4700 4117 50  0000 C CNN
+F 1 "ICM-20602" H 4700 4026 50  0000 C CNN
+F 2 "mainboard:PQFN50P300X300X80-16N" H 4700 3350 50  0001 L BNN
+F 3 "World's Best 6-Axis Integrated s" H 4700 3350 50  0001 L BNN
+F 4 "Unavailable" H 4700 3350 50  0001 L BNN "Field4"
+F 5 "TDK InvenSense" H 4700 3350 50  0001 L BNN "Field5"
+F 6 "None" H 4700 3350 50  0001 L BNN "Field6"
+F 7 "PQFN-16 TDK-InvenSense" H 4700 3350 50  0001 L BNN "Field7"
+F 8 "ICM-20602" H 4700 3350 50  0001 L BNN "Field8"
+	1    4700 3350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5400 3550
+$Comp
+L power:GND #PWR?
+U 1 1 5FD7C985
+P 5400 3750
+F 0 "#PWR?" H 5400 3500 50  0001 C CNN
+F 1 "GND" V 5405 3622 50  0000 R CNN
+F 2 "" H 5400 3750 50  0001 C CNN
+F 3 "" H 5400 3750 50  0001 C CNN
+	1    5400 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FD7C98B
+P 6200 3050
+F 0 "C?" H 6350 3100 50  0000 C CNN
+F 1 "0.1uF" H 6400 3000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 6200 3050 50  0001 C CNN
+F 3 "~" H 6200 3050 50  0001 C CNN
+	1    6200 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FD7C991
+P 5600 3050
+F 0 "C?" H 5450 3050 50  0000 C CNN
+F 1 "2.2uF" H 5800 3050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5600 3050 50  0001 C CNN
+F 3 "~" H 5600 3050 50  0001 C CNN
+	1    5600 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FD7C997
+P 5900 3050
+F 0 "C?" H 5750 3050 50  0000 C CNN
+F 1 "10nF" H 5900 2900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5900 3050 50  0001 C CNN
+F 3 "~" H 5900 3050 50  0001 C CNN
+	1    5900 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5400 2950 5600 2950
+Connection ~ 5400 2950
+Connection ~ 5600 2950
+Wire Wire Line
+	5600 2950 5900 2950
+Wire Wire Line
+	5600 3150 5900 3150
+$Comp
+L power:GND #PWR?
+U 1 1 5FD7C9A2
+P 5900 3150
+F 0 "#PWR?" H 5900 2900 50  0001 C CNN
+F 1 "GND" H 5750 3100 50  0000 C CNN
+F 2 "" H 5900 3150 50  0001 C CNN
+F 3 "" H 5900 3150 50  0001 C CNN
+	1    5900 3150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5400 3150
+$Comp
+L Device:C_Small C?
+U 1 1 5FD7C9A9
+P 5500 3350
+F 0 "C?" V 5550 3250 50  0000 C CNN
+F 1 "0.1uF" V 5600 3400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 5500 3350 50  0001 C CNN
+F 3 "~" H 5500 3350 50  0001 C CNN
+	1    5500 3350
+	0    1    1    0   
+$EndComp
+Connection ~ 5900 3150
+Wire Wire Line
+	5600 3350 5600 3150
+Connection ~ 5600 3150
+Wire Wire Line
+	5900 2950 6200 2950
+Connection ~ 5900 2950
+Wire Wire Line
+	5900 3150 6200 3150
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5FD7C9B5
+P 4000 3250
+F 0 "#PWR?" H 4000 3100 50  0001 C CNN
+F 1 "+1V8" V 4015 3378 50  0000 L CNN
+F 2 "" H 4000 3250 50  0001 C CNN
+F 3 "" H 4000 3250 50  0001 C CNN
+	1    4000 3250
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 4000 3550
+NoConn ~ 4000 3150
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5FD7C9BD
+P 5400 2850
+F 0 "#PWR?" H 5400 2700 50  0001 C CNN
+F 1 "+1V8" H 5415 3023 50  0000 C CNN
+F 2 "" H 5400 2850 50  0001 C CNN
+F 3 "" H 5400 2850 50  0001 C CNN
+	1    5400 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 5400 2850
+Text HLabel 4000 3450 0    50   Input ~ 0
+SCL
+Text HLabel 4000 3350 0    50   Input ~ 0
+SDA
+$EndSCHEMATC

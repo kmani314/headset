@@ -1,0 +1,411 @@
+{
+   "name" : "TC358870XBG",
+   "pins" : [
+      {
+         "name" : "RESETN",
+         "num" : "K8",
+         "type" : "I"
+      },
+      {
+         "name" : "REFCLK",
+         "num" : "K9",
+         "type" : "I"
+      },
+      {
+         "name" : "TEST",
+         "num" : "G5",
+         "type" : "I"
+      },
+      {
+         "name" : "INT",
+         "num" : "J3",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI0CP",
+         "num" : "F10",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI0CN",
+         "num" : "F9",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI0D0P",
+         "num" : "H10",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI0D0N",
+         "num" : "H9",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI0D1P",
+         "num" : "G10",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI0D1N",
+         "num" : "G9",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI0D2P",
+         "num" : "E10",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI0D2N",
+         "num" : "E9",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI0D3P",
+         "num" : "D10",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI0D3N",
+         "num" : "D9",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI1CP",
+         "num" : "A7",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI1CN",
+         "num" : "B7",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI1D0P",
+         "num" : "A9",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI1D0N",
+         "num" : "B9",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI1D1P",
+         "num" : "A8",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI1D1N",
+         "num" : "B8",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI1D2P",
+         "num" : "A6",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI1D2N",
+         "num" : "B6",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI1D3P",
+         "num" : "A5",
+         "type" : "O"
+      },
+      {
+         "name" : "CDSI1D3N",
+         "num" : "B5",
+         "type" : "O"
+      },
+      {
+         "name" : "HDMICP",
+         "num" : "C1",
+         "type" : "O"
+      },
+      {
+         "name" : "HDMICN",
+         "num" : "C2",
+         "type" : "I"
+      },
+      {
+         "name" : "HDMID0P",
+         "num" : "D1",
+         "type" : "I"
+      },
+      {
+         "name" : "HDMID0N",
+         "num" : "D2",
+         "type" : "I"
+      },
+      {
+         "name" : "HDMID1P",
+         "num" : "E1",
+         "type" : "I"
+      },
+      {
+         "name" : "HDMID1N",
+         "num" : "E2",
+         "type" : "I"
+      },
+      {
+         "name" : "HDMID2P",
+         "num" : "F1",
+         "type" : "I"
+      },
+      {
+         "name" : "HDMID2N",
+         "num" : "F2",
+         "type" : "I"
+      },
+      {
+         "name" : "REXT",
+         "num" : "A1",
+         "type" : "I"
+      },
+      {
+         "name" : "DDC_SCL",
+         "num" : "A3",
+         "type" : "B"
+      },
+      {
+         "name" : "DDC_SDA",
+         "num" : "B3",
+         "type" : "B"
+      },
+      {
+         "name" : "CEC",
+         "num" : "A2",
+         "type" : "B"
+      }, 
+      {
+         "name" : "HPDI",
+         "num" : "A4",
+         "type" : "I"
+      },
+      {
+         "name" : "HPDO",
+         "num" : "B4",
+         "type" : "O"
+      },
+      {
+         "name" : "A_SCK",
+         "num" : "K7",
+         "type" : "O"
+      },
+      {
+         "name" : "A_WFS",
+         "num" : "K5",
+         "type" : "O"
+      },
+      {
+         "name" : "A_SD3",
+         "num" : "J5",
+         "type" : "O"
+      },
+      {
+         "name" : "A_SD2",
+         "num" : "J6",
+         "type" : "O"
+      },
+      {
+         "name" : "A_SD1",
+         "num" : "J8",
+         "type" : "O"
+      },
+      {
+         "name" : "A_SD0",
+         "num" : "J9",
+         "type" : "O"
+      },
+      {
+         "name" : "A_OSCK",
+         "num" : "J4",
+         "type" : "O"
+      },
+      {
+         "name" : "IR",
+         "num" : "G6",
+         "type" : "I"
+      },
+      {
+         "name" : "I2C_SCL",
+         "num" : "K4",
+         "type" : "B"
+      },
+      {
+         "name" : "I2C_SDA",
+         "num" : "K3",
+         "type" : "B"
+      },
+      {
+         "name" : "BIASDA",
+         "num" : "J1",
+         "type" : "O"
+      },
+      {
+         "name" : "DAOUT",
+         "num" : "J2",
+         "type" : "O"
+      },
+      {
+         "name" : "PCKIN",
+         "num" : "K1",
+         "type" : "I"
+      },
+      {
+         "name" : "PFIL",
+         "num" : "K2",
+         "type" : "O"
+      },
+      {
+         "name" : "VDDC11",
+         "num" : "C10",
+         "type" : "W"
+      },
+      {
+         "name" : "VDDC11",
+         "num" : "K6",
+         "type" : "W"
+      },
+      {
+         "name" : "VDDIO18",
+         "num" : "J7",
+         "type" : "W"
+      },
+      {
+         "name" : "VDDIO33",
+         "num" : "H2",
+         "type" : "W"
+      },
+      {
+         "name" : "VDD33_HDMI",
+         "num" : "B1",
+         "type" : "W"
+      },
+      {
+         "name" : "VDD33_HDMI",
+         "num" : "G1",
+         "type" : "W"
+      },
+      {
+         "name" : "VDD11_HDMI",
+         "num" : "B2",
+         "type" : "W"
+      },
+      {
+         "name" : "VDD11_HDMI",
+         "num" : "G2",
+         "type" : "W"
+      },
+      {
+         "name" : "VDD12_MIPI0",
+         "num" : "J10",
+         "type" : "W"
+      },
+      {
+         "name" : "VDD12_MIPI1",
+         "num" : "B10",
+         "type" : "W"
+      },
+      {
+         "name" : "GND",
+         "num" : "A10",
+         "type" : "P"
+      },
+      {
+         "name" : "GND",
+         "num" : "C9",
+         "type" : "P"
+      },
+      {
+         "name" : "GND",
+         "num" : "D4",
+         "type" : "P"
+      },
+      {
+         "name" : "GND",
+         "num" : "D5",
+         "type" : "P"
+      },
+      {
+         "name" : "GND",
+         "num" : "D6",
+         "type" : "P"
+      },
+      {
+         "name" : "GND",
+         "num" : "D7",
+         "type" : "P"
+      },
+      {
+         "name" : "GND",
+         "num" : "E4",
+         "type" : "P"
+      },
+      {
+         "name" : "GND",
+         "num" : "E5",
+         "type" : "P"
+      },
+      {
+         "name" : "GND",
+         "num" : "E6",
+         "type" : "P"
+      },
+      {
+         "name" : "GND",
+         "num" : "E7",
+         "type" : "P"
+      },
+      {
+         "name" : "GND",
+         "num" : "F4",
+         "type" : "P"
+      },
+      {
+         "name" : "GND",
+         "num" : "F5",
+         "type" : "P"
+      },
+      {
+         "name" : "GND",
+         "num" : "F6",
+         "type" : "P"
+      },
+      {
+         "name" : "GND",
+         "num" : "F7",
+         "type" : "P"
+      },
+      {
+         "name" : "GND",
+         "num" : "G4",
+         "type" : "P"
+      },
+      {
+         "name" : "GND",
+         "num" : "G7",
+         "type" : "P"
+      },
+      {
+         "name" : "GND",
+         "num" : "H1",
+         "type" : "P"
+      },
+      {
+         "name" : "GND",
+         "num" : "K10",
+         "type" : "P"
+      }
+   ],
+   "ref" : "U",
+   "units" : 1,
+   "pin_length": 150,
+   "pin_text_offset": 60,
+   "pin_offset": 100,
+   "margin": 800 
+}
