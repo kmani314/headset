@@ -567,8 +567,6 @@ Text HLabel 5150 5250 2    50   Input ~ 0
 LED_CA2
 Text HLabel 5150 5350 2    50   Input ~ 0
 LED_AN2
-Text HLabel 5150 4950 2    50   Input ~ 0
-LEDPWM
 $Comp
 L Device:C_Small C14
 U 1 1 6021F152
@@ -710,8 +708,7 @@ F 3 "" H 7300 3650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6700 4000 6700 3900
-Connection ~ 6700 3800
-Connection ~ 6700 3900
-Wire Wire Line
-	6700 3900 6700 3800
+Text HLabel 6700 4000 3    50   Input ~ 0
+LCD_BIAS_ENABLE
+NoConn ~ 5150 4950
 $EndSCHEMATC

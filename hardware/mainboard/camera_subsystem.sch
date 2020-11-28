@@ -342,9 +342,6 @@ F 3 "" H 5000 2200 50  0001 C CNN
 	1    5000 2200
 	1    0    0    -1  
 $EndComp
-Connection ~ 6150 1900
-Wire Wire Line
-	5350 1900 6150 1900
 $Comp
 L power:GND #PWR?
 U 1 1 600090CD
@@ -419,27 +416,27 @@ Connection ~ 7350 3350
 $Comp
 L power:GND #PWR?
 U 1 1 600090EF
-P 4400 3600
+P 4150 3600
 AR Path="/600090EF" Ref="#PWR?"  Part="1" 
 AR Path="/5FFAA2CE/600090EF" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4400 3350 50  0001 C CNN
-F 1 "GND" H 4405 3427 50  0000 C CNN
-F 2 "" H 4400 3600 50  0001 C CNN
-F 3 "" H 4400 3600 50  0001 C CNN
-	1    4400 3600
+F 0 "#PWR?" H 4150 3350 50  0001 C CNN
+F 1 "GND" H 4155 3427 50  0000 C CNN
+F 2 "" H 4150 3600 50  0001 C CNN
+F 3 "" H 4150 3600 50  0001 C CNN
+	1    4150 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 600090F5
-P 4400 3500
+P 4150 3500
 AR Path="/600090F5" Ref="C?"  Part="1" 
 AR Path="/5FFAA2CE/600090F5" Ref="C?"  Part="1" 
-F 0 "C?" H 4492 3546 50  0000 L CNN
-F 1 "4.7uF" H 4492 3455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4400 3500 50  0001 C CNN
-F 3 "~" H 4400 3500 50  0001 C CNN
-	1    4400 3500
+F 0 "C?" H 4242 3546 50  0000 L CNN
+F 1 "4.7uF" H 4242 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 4150 3500 50  0001 C CNN
+F 3 "~" H 4150 3500 50  0001 C CNN
+	1    4150 3500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -484,23 +481,7 @@ F 3 "" H 4750 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 3500 4750 3600
-Connection ~ 4750 3500
-Wire Wire Line
 	4750 3400 4750 3500
-$Comp
-L mainboard:MCP1725-ADJE_MC U?
-U 1 1 60009112
-P 4750 3400
-AR Path="/60009112" Ref="U?"  Part="1" 
-AR Path="/5FFAA2CE/60009112" Ref="U?"  Part="1" 
-F 0 "U?" H 5750 3787 60  0000 C CNN
-F 1 "MCP1725-ADJE_MC" H 5750 3681 60  0000 C CNN
-F 2 "mainboard:MCP1725-ADJE_MC" H 5750 3640 60  0001 C CNN
-F 3 "" H 4750 3400 60  0000 C CNN
-	1    4750 3400
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60009118
@@ -530,20 +511,17 @@ $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 60009124
-P 4400 3400
+P 4150 3400
 AR Path="/60009124" Ref="#PWR?"  Part="1" 
 AR Path="/5FFAA2CE/60009124" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4400 3250 50  0001 C CNN
-F 1 "+3.3V" V 4415 3528 50  0000 L CNN
-F 2 "" H 4400 3400 50  0001 C CNN
-F 3 "" H 4400 3400 50  0001 C CNN
-	1    4400 3400
+F 0 "#PWR?" H 4150 3250 50  0001 C CNN
+F 1 "+3.3V" V 4165 3528 50  0000 L CNN
+F 2 "" H 4150 3400 50  0001 C CNN
+F 3 "" H 4150 3400 50  0001 C CNN
+	1    4150 3400
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4400 3400 4750 3400
-Connection ~ 4400 3400
-Connection ~ 4750 3400
+Connection ~ 4150 3400
 Wire Wire Line
 	6750 3600 7350 3600
 Wire Wire Line
@@ -597,4 +575,28 @@ Text HLabel 2900 2100 0    50   Input ~ 0
 I2C2_SDA
 Text HLabel 2900 2000 0    50   Input ~ 0
 I2C2_SCL
+$Comp
+L mainboard:MCP1725-ADJE_MC U?
+U 1 1 60009112
+P 4750 3400
+AR Path="/60009112" Ref="U?"  Part="1" 
+AR Path="/5FFAA2CE/60009112" Ref="U?"  Part="1" 
+F 0 "U?" H 5750 3787 60  0000 C CNN
+F 1 "MCP1725-ADJE_MC" H 5750 3681 60  0000 C CNN
+F 2 "mainboard:MCP1725-ADJE_MC" H 5750 3640 60  0001 C CNN
+F 3 "" H 4750 3400 60  0000 C CNN
+	1    4750 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3400 4750 3400
+Connection ~ 4750 3400
+Wire Wire Line
+	4600 3650 4600 3600
+Wire Wire Line
+	4600 3600 4750 3600
+Text HLabel 4600 3650 3    50   Input ~ 0
+REG_2V8_ENABLE
+Text HLabel 5350 1900 0    50   Input ~ 0
+REG_1V2_ENABLE
 $EndSCHEMATC
