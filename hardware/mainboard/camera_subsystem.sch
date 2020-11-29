@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -220,14 +220,14 @@ $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5FFF5446
-P 6300 1900
+P 7050 1900
 AR Path="/5FFF5446" Ref="#PWR?"  Part="1" 
 AR Path="/5FFAA2CE/5FFF5446" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6300 1750 50  0001 C CNN
-F 1 "+3.3V" V 6315 2028 50  0000 L CNN
-F 2 "" H 6300 1900 50  0001 C CNN
-F 3 "" H 6300 1900 50  0001 C CNN
-	1    6300 1900
+F 0 "#PWR?" H 7050 1750 50  0001 C CNN
+F 1 "+3.3V" V 7065 2028 50  0000 L CNN
+F 2 "" H 7050 1900 50  0001 C CNN
+F 3 "" H 7050 1900 50  0001 C CNN
+	1    7050 1900
 	0    1    1    0   
 $EndComp
 $Comp
@@ -236,7 +236,7 @@ U 1 1 5FFF544C
 P 6300 1800
 AR Path="/5FFF544C" Ref="C?"  Part="1" 
 AR Path="/5FFAA2CE/5FFF544C" Ref="C?"  Part="1" 
-F 0 "C?" H 6000 1800 50  0000 C CNN
+F 0 "C?" H 6200 1700 50  0000 C CNN
 F 1 "1uF" H 6150 1800 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder" H 6300 1800 50  0001 C CNN
 F 3 "~" H 6300 1800 50  0001 C CNN
@@ -258,7 +258,6 @@ F 3 "" H 6300 1700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6150 1900 6300 1900
-Connection ~ 6300 1900
 $Comp
 L power:GND #PWR?
 U 1 1 5FFF545A
@@ -303,17 +302,16 @@ Wire Wire Line
 $Comp
 L power:+1V2 #PWR?
 U 1 1 5FFF546D
-P 6400 2100
+P 6850 2100
 AR Path="/5FFF546D" Ref="#PWR?"  Part="1" 
 AR Path="/5FFAA2CE/5FFF546D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6400 1950 50  0001 C CNN
-F 1 "+1V2" V 6415 2228 50  0000 L CNN
-F 2 "" H 6400 2100 50  0001 C CNN
-F 3 "" H 6400 2100 50  0001 C CNN
-	1    6400 2100
+F 0 "#PWR?" H 6850 1950 50  0001 C CNN
+F 1 "+1V2" V 6865 2228 50  0000 L CNN
+F 2 "" H 6850 2100 50  0001 C CNN
+F 3 "" H 6850 2100 50  0001 C CNN
+	1    6850 2100
 	0    1    1    0   
 $EndComp
-Connection ~ 6400 2100
 Text Notes 5250 1450 0    50   ~ 0
 Camera digital core regulator\n
 $Comp
@@ -599,4 +597,67 @@ Text HLabel 4600 3650 3    50   Input ~ 0
 REG_2V8_ENABLE
 Text HLabel 5350 1900 0    50   Input ~ 0
 REG_1V2_ENABLE
+$Comp
+L Device:C_Small C?
+U 1 1 6021847C
+P 6600 2200
+AR Path="/5FF71A49/6021847C" Ref="C?"  Part="1" 
+AR Path="/5FFAA2CE/6021847C" Ref="C?"  Part="1" 
+F 0 "C?" H 6400 2100 50  0000 L CNN
+F 1 "10uF" H 6350 2200 50  0000 L CNN
+F 2 "" H 6600 2200 50  0001 C CNN
+F 3 "~" H 6600 2200 50  0001 C CNN
+	1    6600 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6600 2100 6850 2100
+Wire Wire Line
+	6600 2100 6400 2100
+Connection ~ 6600 2100
+Connection ~ 6400 2100
+Wire Wire Line
+	6600 2300 6400 2300
+Connection ~ 6400 2300
+$Comp
+L Device:C_Small C?
+U 1 1 6021FE8A
+P 6600 1800
+AR Path="/5FF71A49/6021FE8A" Ref="C?"  Part="1" 
+AR Path="/5FFAA2CE/6021FE8A" Ref="C?"  Part="1" 
+F 0 "C?" H 6400 1700 50  0000 L CNN
+F 1 "10uF" H 6350 1800 50  0000 L CNN
+F 2 "" H 6600 1800 50  0001 C CNN
+F 3 "~" H 6600 1800 50  0001 C CNN
+	1    6600 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6600 1700 6300 1700
+Connection ~ 6300 1700
+Wire Wire Line
+	6600 1900 6300 1900
+Connection ~ 6300 1900
+$Comp
+L Device:C_Small C?
+U 1 1 60225ABF
+P 6950 1800
+AR Path="/5FF71A49/60225ABF" Ref="C?"  Part="1" 
+AR Path="/5FFAA2CE/60225ABF" Ref="C?"  Part="1" 
+F 0 "C?" H 6750 1700 50  0000 L CNN
+F 1 "0.1uF" H 6700 1800 50  0000 L CNN
+F 2 "" H 6950 1800 50  0001 C CNN
+F 3 "~" H 6950 1800 50  0001 C CNN
+	1    6950 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6600 1700 6950 1700
+Connection ~ 6600 1700
+Wire Wire Line
+	7050 1900 6950 1900
+Connection ~ 6600 1900
+Connection ~ 6950 1900
+Wire Wire Line
+	6950 1900 6600 1900
 $EndSCHEMATC
