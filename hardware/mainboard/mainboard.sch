@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -1120,9 +1120,9 @@ Text Label 1450 3800 2    50   ~ 0
 I2C2_SCL
 Wire Wire Line
 	1450 3800 1750 3800
-Text Label 6150 1000 2    50   ~ 0
+Text Label 6000 1000 2    50   ~ 0
 I2C1_SCL
-Text Label 6150 1100 2    50   ~ 0
+Text Label 6000 1100 2    50   ~ 0
 I2C1_SDA
 $Comp
 L power:+3.3V #PWR0254
@@ -1296,27 +1296,27 @@ S 7550 5200 850  750
 U 601227A6
 F0 "microSD card" 50
 F1 "sd_subsystem.sch" 50
-F2 "SDMMC0_D2" I L 7550 5450 50 
-F3 "SDMMC0_D3" I L 7550 5550 50 
-F4 "SDMMC0_CMD" I L 7550 5650 50 
-F5 "SDMMC0_CLK" I L 7550 5750 50 
-F6 "SDMMC0_D0" I L 7550 5250 50 
-F7 "SDMMC0_D1" I L 7550 5350 50 
-F8 "SDMMC0_DET_L" I L 7550 5850 50 
+F2 "SDMMC0_D2" I L 7550 5700 50 
+F3 "SDMMC0_D3" I L 7550 5600 50 
+F4 "SDMMC0_CMD" I L 7550 5500 50 
+F5 "SDMMC0_CLK" I L 7550 5400 50 
+F6 "SDMMC0_D0" I L 7550 5900 50 
+F7 "SDMMC0_D1" I L 7550 5800 50 
+F8 "SDMMC0_DET_L" I L 7550 5300 50 
 $EndSheet
-Text Label 7550 5250 2    50   ~ 0
+Text Label 7550 5900 2    50   ~ 0
 SDMMC0_D0
-Text Label 7550 5350 2    50   ~ 0
+Text Label 7550 5800 2    50   ~ 0
 SDMMC0_D1
-Text Label 7550 5550 2    50   ~ 0
+Text Label 7550 5600 2    50   ~ 0
 SDMMC0_D3
-Text Label 7550 5650 2    50   ~ 0
+Text Label 7550 5500 2    50   ~ 0
 SDMMC0_CMD
-Text Label 7550 5850 2    50   ~ 0
+Text Label 7550 5300 2    50   ~ 0
 SDMMC0_DET_L
-Text Label 7550 5750 2    50   ~ 0
+Text Label 7550 5400 2    50   ~ 0
 SDMMC0_CLK
-Text Label 7550 5450 2    50   ~ 0
+Text Label 7550 5700 2    50   ~ 0
 SDMMC0_D2
 Text Label 7750 3200 2    50   ~ 0
 I2C1_SCL
@@ -1373,6 +1373,7 @@ F20 "HDPO" I L 7900 2400 50
 F21 "HDMI_3V3_ENABLE" I R 9450 1200 50 
 F22 "1V15_REG_ENABLE" I R 9450 1300 50 
 F23 "REFCLK_ENABLE" I R 9450 1400 50 
+F24 "BRIDGE_1V8_REG_ENABLE" I R 9450 1600 50 
 $EndSheet
 Text Label 7900 2300 2    50   ~ 0
 HDMI_TXCP
@@ -1418,8 +1419,120 @@ Text Label 1750 3000 2    50   ~ 0
 REG_1V2_ENABLE
 Text Label 7750 4750 2    50   ~ 0
 REG_2V8_ENABLE
-Text Label 1600 3150 2    50   ~ 0
-REG_2V8_ENABLE
 Text Label 2750 2800 0    50   ~ 0
 REG_2V8_ENABLE
+$Comp
+L Mechanical:Fiducial FID?
+U 1 1 5FEFD4AC
+P 6050 3150
+F 0 "FID?" H 6135 3196 50  0000 L CNN
+F 1 "Fiducial" H 6135 3105 50  0000 L CNN
+F 2 "" H 6050 3150 50  0001 C CNN
+F 3 "~" H 6050 3150 50  0001 C CNN
+	1    6050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID?
+U 1 1 5FEFDC53
+P 6050 3450
+F 0 "FID?" H 6135 3496 50  0000 L CNN
+F 1 "Fiducial" H 6135 3405 50  0000 L CNN
+F 2 "" H 6050 3450 50  0001 C CNN
+F 3 "~" H 6050 3450 50  0001 C CNN
+	1    6050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID?
+U 1 1 5FEFEBAF
+P 6050 3750
+F 0 "FID?" H 6135 3796 50  0000 L CNN
+F 1 "Fiducial" H 6135 3705 50  0000 L CNN
+F 2 "" H 6050 3750 50  0001 C CNN
+F 3 "~" H 6050 3750 50  0001 C CNN
+	1    6050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID?
+U 1 1 5FEFFA9D
+P 6050 4050
+F 0 "FID?" H 6135 4096 50  0000 L CNN
+F 1 "Fiducial" H 6135 4005 50  0000 L CNN
+F 2 "" H 6050 4050 50  0001 C CNN
+F 3 "~" H 6050 4050 50  0001 C CNN
+	1    6050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID?
+U 1 1 5FF00982
+P 6050 4350
+F 0 "FID?" H 6135 4396 50  0000 L CNN
+F 1 "Fiducial" H 6135 4305 50  0000 L CNN
+F 2 "" H 6050 4350 50  0001 C CNN
+F 3 "~" H 6050 4350 50  0001 C CNN
+	1    6050 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1000 6150 1000
+Wire Wire Line
+	6000 1100 6150 1100
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FF30886
+P 6000 1100
+AR Path="/5FF71A49/5FF30886" Ref="TP?"  Part="1" 
+AR Path="/5FF30886" Ref="TP?"  Part="1" 
+F 0 "TP?" V 5954 1288 50  0001 L CNN
+F 1 "TestPoint" V 6045 1288 50  0001 L CNN
+F 2 "" H 6200 1100 50  0001 C CNN
+F 3 "~" H 6200 1100 50  0001 C CNN
+	1    6000 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FF31F81
+P 6000 1000
+AR Path="/5FF71A49/5FF31F81" Ref="TP?"  Part="1" 
+AR Path="/5FF31F81" Ref="TP?"  Part="1" 
+F 0 "TP?" V 5954 1188 50  0001 L CNN
+F 1 "TestPoint" V 6045 1188 50  0001 L CNN
+F 2 "" H 6200 1000 50  0001 C CNN
+F 3 "~" H 6200 1000 50  0001 C CNN
+	1    6000 1000
+	1    0    0    -1  
+$EndComp
+Text Label 9450 1600 0    50   ~ 0
+1V8_REG_ENABLE
+Text Label 2750 2900 0    50   ~ 0
+1V8_REG_ENABLE
+Text Label 2750 3400 0    50   ~ 0
+UART2DBG_TX
+Text Label 2750 3500 0    50   ~ 0
+UART2DBG_RX
+Text Label 6450 6950 2    50   ~ 0
+UART2DBG_TX
+Text Label 6450 6850 2    50   ~ 0
+UART2DBG_RX
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 6002C20F
+P 6650 6950
+F 0 "J?" H 6758 7131 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 6758 7040 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6650 6950 50  0001 C CNN
+F 3 "~" H 6650 6950 50  0001 C CNN
+	1    6650 6950
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 9400 3100 850  900 
+U 60213121
+F0 "Audio subsystem" 50
+F1 "audio.sch" 50
+$EndSheet
 $EndSCHEMATC
